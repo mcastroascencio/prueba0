@@ -1,0 +1,11 @@
+I"(function() {
+  $(document).on("ajax:beforeSend", "#emails-form", function() {
+    return console.log("Se esta enviando el formulario");
+  });
+
+  $(document).on("ajax:success", "#emails-form");
+
+  $(document).on("ajax:error", "#emails-form");
+
+}).call(this);
+:ET
